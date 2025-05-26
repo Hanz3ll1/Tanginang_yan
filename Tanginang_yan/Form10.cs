@@ -20,12 +20,54 @@ namespace Tanginang_yan
 
         public void Form10_Load(object sender, EventArgs e)
         {
-                label1.Text = string.Join(", ", Form3.alergies);
+                
             if (Form3.alergies.Contains("Chicken"))
             {
-
+                if(Form5.illness.Contains("Heart Condition"))
+                {
+                    if(Form6.dish.Contains("Vegatarian"))
+                    {
+                        if(Form7.gulay.Contains("Fexitarian"))
+                        {
+                            if(Form9.exercise.Contains("Strength Training"))
+                            {
+                                label1.Text = "Aehanz ganda";
+                            }
+                        }
+                    }
+                }
             }
             
+            if(Form3.alergies.Contains("Shellfish"))
+            {
+                if (Form5.illness.Contains("Previous injuries"))
+                {
+                    if (Form6.dish.Contains("Carnivore"))
+                    {
+                        if (Form8.raw.Contains("Hardcore Carnivore"))
+                        {
+                            if (Form9.exercise.Contains("Cardio"))
+                            {
+                                label1.Text = "Aehanz Sarap";
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (Form3.alergies.Contains("Soy"))
+            {
+                if (Form5.illness.Contains("Diabetes"))
+                {
+                    if (Form6.dish.Contains("Pescatarian"))
+                    {
+                        if (Form9.exercise.Contains("Cardio"))
+                        {
+                            label1.Text = "Aehanz Pogi";
+                        }
+                    }
+                }
+            }
 
         }
 
