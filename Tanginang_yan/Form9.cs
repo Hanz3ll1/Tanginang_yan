@@ -12,6 +12,7 @@ namespace Tanginang_yan
 {
     public partial class Form9 : Form
     {
+        public static List<string> exercise = [];
         public Form9()
         {
             InitializeComponent();
@@ -19,30 +20,39 @@ namespace Tanginang_yan
 
         private void label1_Click(object sender, EventArgs e)
         {
-            if (cbBalanceExcercise.Checked)
+            foreach (var vegitarian in clbWorkout.CheckedItems)
             {
-                Form10 form10 = new Form10();
-                form10.ShowDialog();
-                this.Hide(); return;
+                exercise.Add(vegitarian.ToString()!);
             }
-            if (cbCardio.Checked)
-            {
-                Form10 form10 = new Form10();
-                form10.ShowDialog(); 
-                this.Hide(); return;
-            }
-            if (cbFlexibility.Checked)
-            {
-                Form10 form10= new Form10();
-                form10.ShowDialog();
-                this.Hide(); return;
-            }
-            if (cbStrengthTraining.Checked)
-            {
-                Form10 form10 = new Form10();
-                form10.ShowDialog();
-                this.Hide(); return;
-            }
+
+            Form10 form10 = new Form10();
+            form10.ShowDialog();
+            this.Hide();
+            return;
+            /* if (cbBalanceExcercise.Checked)
+             {
+                 Form10 form10 = new Form10();
+                 form10.ShowDialog();
+                 this.Hide(); return;
+             }
+             if (cbCardio.Checked)
+             {
+                 Form10 form10 = new Form10();
+                 form10.ShowDialog(); 
+                 this.Hide(); return;
+             }
+             if (cbFlexibility.Checked)
+             {
+                 Form10 form10= new Form10();
+                 form10.ShowDialog();
+                 this.Hide(); return;
+             }
+             if (cbStrengthTraining.Checked)
+             {
+                 Form10 form10 = new Form10();
+                 form10.ShowDialog();
+                 this.Hide(); return;
+             }*/
         }
     }
 }

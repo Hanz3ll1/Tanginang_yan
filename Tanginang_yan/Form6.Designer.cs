@@ -33,6 +33,7 @@
             cbPescatarian = new CheckBox();
             cbMix = new CheckBox();
             label1 = new Label();
+            clbFood = new CheckedListBox();
             SuspendLayout();
             // 
             // cbVegatarian
@@ -97,6 +98,17 @@
             label1.Text = "Next";
             label1.Click += label1_Click_2;
             // 
+            // clbFood
+            // 
+            clbFood.BackColor = Color.Beige;
+            clbFood.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            clbFood.FormattingEnabled = true;
+            clbFood.Items.AddRange(new object[] { "Vegatarian", "Carnivore", "Pescatarian", "Mix" });
+            clbFood.Location = new Point(337, 164);
+            clbFood.Name = "clbFood";
+            clbFood.Size = new Size(150, 104);
+            clbFood.TabIndex = 15;
+            // 
             // Form6
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -105,6 +117,7 @@
             BackgroundImage = Properties.Resources._10;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(clbFood);
             Controls.Add(label1);
             Controls.Add(cbMix);
             Controls.Add(cbPescatarian);
@@ -125,5 +138,6 @@
         private CheckBox cbPescatarian;
         private CheckBox cbMix;
         private Label label1;
+        private CheckedListBox clbFood;
     }
 }

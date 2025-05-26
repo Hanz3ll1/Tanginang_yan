@@ -12,6 +12,7 @@ namespace Tanginang_yan
 {
     public partial class Form7 : Form
     {
+        public static List<string> gulay = [];
         public Form7()
         {
             InitializeComponent();
@@ -35,7 +36,16 @@ namespace Tanginang_yan
 
         private void label1_Click_1(object sender, EventArgs e)
         {
-            if (cbFexitarian.Checked)
+            foreach (var vegitarian in clbVegitarian.CheckedItems)
+            {
+                gulay.Add(vegitarian.ToString()!);
+            }
+
+            Form9 form9 = new Form9();
+            form9.ShowDialog();
+            this.Hide();
+            return;
+            /*  if (cbFexitarian.Checked)
             {
                 Form9 form9 = new Form9();
                 form9.ShowDialog();
@@ -81,7 +91,7 @@ namespace Tanginang_yan
                 form9.ShowDialog();
                 this.Hide();
                 return;
-            }
+            }*/
         }
     }
 }

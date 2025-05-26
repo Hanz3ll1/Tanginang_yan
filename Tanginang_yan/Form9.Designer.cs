@@ -33,6 +33,7 @@
             cbFlexibility = new CheckBox();
             cbBalanceExcercise = new CheckBox();
             label1 = new Label();
+            clbWorkout = new CheckedListBox();
             SuspendLayout();
             // 
             // cbStrengthTraining
@@ -41,7 +42,7 @@
             cbStrengthTraining.AutoSize = true;
             cbStrengthTraining.BackColor = Color.Beige;
             cbStrengthTraining.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbStrengthTraining.Location = new Point(168, 176);
+            cbStrengthTraining.Location = new Point(145, 96);
             cbStrengthTraining.Name = "cbStrengthTraining";
             cbStrengthTraining.Size = new Size(174, 27);
             cbStrengthTraining.TabIndex = 0;
@@ -54,7 +55,7 @@
             cbCardio.AutoSize = true;
             cbCardio.BackColor = Color.Beige;
             cbCardio.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbCardio.Location = new Point(168, 237);
+            cbCardio.Location = new Point(344, 85);
             cbCardio.Name = "cbCardio";
             cbCardio.Size = new Size(85, 27);
             cbCardio.TabIndex = 1;
@@ -67,7 +68,7 @@
             cbFlexibility.AutoSize = true;
             cbFlexibility.BackColor = Color.Beige;
             cbFlexibility.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbFlexibility.Location = new Point(443, 176);
+            cbFlexibility.Location = new Point(467, 96);
             cbFlexibility.Name = "cbFlexibility";
             cbFlexibility.Size = new Size(111, 27);
             cbFlexibility.TabIndex = 2;
@@ -80,7 +81,7 @@
             cbBalanceExcercise.AutoSize = true;
             cbBalanceExcercise.BackColor = Color.Beige;
             cbBalanceExcercise.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbBalanceExcercise.Location = new Point(443, 237);
+            cbBalanceExcercise.Location = new Point(584, 85);
             cbBalanceExcercise.Name = "cbBalanceExcercise";
             cbBalanceExcercise.Size = new Size(161, 27);
             cbBalanceExcercise.TabIndex = 3;
@@ -100,6 +101,15 @@
             label1.Text = "Next";
             label1.Click += label1_Click;
             // 
+            // clbWorkout
+            // 
+            clbWorkout.FormattingEnabled = true;
+            clbWorkout.Items.AddRange(new object[] { "Strength Training", "Cardio", "Flexibility", "Balance Exercise" });
+            clbWorkout.Location = new Point(344, 160);
+            clbWorkout.Name = "clbWorkout";
+            clbWorkout.Size = new Size(150, 114);
+            clbWorkout.TabIndex = 5;
+            // 
             // Form9
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -107,6 +117,7 @@
             BackgroundImage = Properties.Resources._13;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(clbWorkout);
             Controls.Add(label1);
             Controls.Add(cbBalanceExcercise);
             Controls.Add(cbFlexibility);
@@ -127,5 +138,6 @@
         private CheckBox cbFlexibility;
         private CheckBox cbBalanceExcercise;
         private Label label1;
+        private CheckedListBox clbWorkout;
     }
 }

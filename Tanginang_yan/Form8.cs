@@ -12,6 +12,7 @@ namespace Tanginang_yan
 {
     public partial class Form8 : Form
     {
+        public static List<string> raw = [];
         public Form8()
         {
             InitializeComponent();
@@ -19,7 +20,16 @@ namespace Tanginang_yan
 
         private void label1_Click(object sender, EventArgs e)
         {
-            if (cbHardCoreCarnivore.Checked)
+            foreach (var meat in clbCarnivore.CheckedItems)
+            {
+                raw.Add(meat.ToString()!);
+            }
+
+            Form4 form4 = new Form4();
+            form4.ShowDialog();
+            this.Hide();
+            return;
+            /* if (cbHardCoreCarnivore.Checked)
             {
                 Form9 form9 = new Form9();
                 form9.ShowDialog();
@@ -57,7 +67,7 @@ namespace Tanginang_yan
                 form9.ShowDialog();
                 this.Hide();
                 return;
-            }
+            }*/
         }
 
         private void Form8_Load(object sender, EventArgs e)

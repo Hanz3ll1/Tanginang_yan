@@ -34,6 +34,7 @@
             cbLionDiet = new CheckBox();
             cbModifiedCarnivore = new CheckBox();
             label1 = new Label();
+            clbCarnivore = new CheckedListBox();
             SuspendLayout();
             // 
             // cbHardCoreCarnivore
@@ -41,7 +42,7 @@
             cbHardCoreCarnivore.AutoSize = true;
             cbHardCoreCarnivore.BackColor = Color.Beige;
             cbHardCoreCarnivore.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbHardCoreCarnivore.Location = new Point(173, 142);
+            cbHardCoreCarnivore.Location = new Point(81, 83);
             cbHardCoreCarnivore.Name = "cbHardCoreCarnivore";
             cbHardCoreCarnivore.Size = new Size(188, 27);
             cbHardCoreCarnivore.TabIndex = 0;
@@ -53,7 +54,7 @@
             cbStandardCarnivore.AutoSize = true;
             cbStandardCarnivore.BackColor = Color.Beige;
             cbStandardCarnivore.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbStandardCarnivore.Location = new Point(173, 205);
+            cbStandardCarnivore.Location = new Point(275, 83);
             cbStandardCarnivore.Name = "cbStandardCarnivore";
             cbStandardCarnivore.Size = new Size(188, 27);
             cbStandardCarnivore.TabIndex = 1;
@@ -65,7 +66,7 @@
             cbKetoCarnivore.AutoSize = true;
             cbKetoCarnivore.BackColor = Color.Beige;
             cbKetoCarnivore.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbKetoCarnivore.Location = new Point(454, 145);
+            cbKetoCarnivore.Location = new Point(469, 83);
             cbKetoCarnivore.Name = "cbKetoCarnivore";
             cbKetoCarnivore.Size = new Size(153, 27);
             cbKetoCarnivore.TabIndex = 2;
@@ -77,7 +78,7 @@
             cbLionDiet.AutoSize = true;
             cbLionDiet.BackColor = Color.Beige;
             cbLionDiet.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbLionDiet.Location = new Point(454, 205);
+            cbLionDiet.Location = new Point(176, 116);
             cbLionDiet.Name = "cbLionDiet";
             cbLionDiet.Size = new Size(105, 27);
             cbLionDiet.TabIndex = 3;
@@ -89,7 +90,7 @@
             cbModifiedCarnivore.AutoSize = true;
             cbModifiedCarnivore.BackColor = Color.Beige;
             cbModifiedCarnivore.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbModifiedCarnivore.Location = new Point(307, 258);
+            cbModifiedCarnivore.Location = new Point(395, 116);
             cbModifiedCarnivore.Name = "cbModifiedCarnivore";
             cbModifiedCarnivore.Size = new Size(188, 27);
             cbModifiedCarnivore.TabIndex = 4;
@@ -108,6 +109,15 @@
             label1.Text = "Next";
             label1.Click += label1_Click;
             // 
+            // clbCarnivore
+            // 
+            clbCarnivore.FormattingEnabled = true;
+            clbCarnivore.Items.AddRange(new object[] { "Hardcore Carnivore", "Standard Carnivore", "Keto-Carnivore", "Lion Diet", "Modified Carnivore" });
+            clbCarnivore.Location = new Point(313, 181);
+            clbCarnivore.Name = "clbCarnivore";
+            clbCarnivore.Size = new Size(188, 114);
+            clbCarnivore.TabIndex = 6;
+            // 
             // Form8
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -115,6 +125,7 @@
             BackgroundImage = Properties.Resources._12;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(clbCarnivore);
             Controls.Add(label1);
             Controls.Add(cbModifiedCarnivore);
             Controls.Add(cbLionDiet);
@@ -138,5 +149,6 @@
         private CheckBox cbLionDiet;
         private CheckBox cbModifiedCarnivore;
         private Label label1;
+        private CheckedListBox clbCarnivore;
     }
 }

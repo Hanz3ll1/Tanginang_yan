@@ -187,7 +187,7 @@
             clbIllness.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             clbIllness.FormattingEnabled = true;
             clbIllness.Items.AddRange(new object[] { "Heart Condition", "Previous injuries", "Diabetes", "Hypertension", "Jointproblems", "Chronic Fatigue Syndrome", "Post Surgery Recovery", "Lung Condition", "Gout", "Scoliosis" });
-            clbIllness.Location = new Point(312, 79);
+            clbIllness.Location = new Point(268, 80);
             clbIllness.Margin = new Padding(4);
             clbIllness.MultiColumn = true;
             clbIllness.Name = "clbIllness";

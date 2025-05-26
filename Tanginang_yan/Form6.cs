@@ -12,6 +12,7 @@ namespace Tanginang_yan
 {
     public partial class Form6 : Form
     {
+        public static List<string> dish = [];
         public Form6()
         {
             InitializeComponent();
@@ -67,7 +68,17 @@ namespace Tanginang_yan
 
         private void label1_Click_2(object sender, EventArgs e)
         {
-            if (cbVegatarian.Checked)
+
+            foreach (var food in clbFood.CheckedItems)
+            {
+                dish.Add(food.ToString()!);
+            }
+
+            Form7 form7 = new Form7();
+            form7.ShowDialog();
+            this.Hide();
+            return;
+            /* if (cbVegatarian.Checked)
             {
                 Form7 form7 = new Form7();
                 form7.Show();
@@ -88,7 +99,7 @@ namespace Tanginang_yan
                 form9.Show();
                 this.Hide();
                 return;
-            }
+            }*/
 
 
         }
