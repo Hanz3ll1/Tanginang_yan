@@ -14,18 +14,7 @@ namespace Tanginang_yan
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtUserName.Text == "Aehanz Kyle" && txtPassWord.Text == "Aehanzganda213")
-            {
-                new Form2().Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("The username or password is incorrect. Pls try again.");
-                txtUserName.Clear();
-                txtPassWord.Clear();
-                txtUserName.Focus();
-            }
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -47,6 +36,27 @@ namespace Tanginang_yan
         private void label1_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            if (txtUserName.Text == "Aehanz Kyle" && txtPassWord.Text == "Aehanzganda213")
+            {
+                new Form2().Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("The username or password is incorrect. Pls try again.");
+                txtUserName.Clear();
+                txtPassWord.Clear();
+                txtUserName.Focus();
+            }
         }
     }
 }

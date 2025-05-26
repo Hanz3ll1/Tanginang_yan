@@ -24,11 +24,21 @@ namespace Tanginang_yan
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new form5().Show();
-            Hide();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            new Form5().Show();
+            Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
             new Form6().Show();
             Hide();

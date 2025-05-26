@@ -1,6 +1,6 @@
 ﻿namespace Tanginang_yan
 {
-    partial class form5
+    partial class Form5
     {
         /// <summary>
         /// Required designer variable.
@@ -28,179 +28,215 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
+            cbHypertension = new CheckBox();
+            cbheartCondition = new CheckBox();
+            cbPreviousInjuries = new CheckBox();
+            cbJointProblems = new CheckBox();
+            cbDiabetes = new CheckBox();
+            cbPostSurgeryRecovery = new CheckBox();
+            cbScoliosis = new CheckBox();
+            cbChronicFatigueSyndrome = new CheckBox();
+            cbLungCondition = new CheckBox();
+            cbGout = new CheckBox();
             label1 = new Label();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox4 = new CheckBox();
-            checkBox5 = new CheckBox();
-            checkBox6 = new CheckBox();
-            checkBox7 = new CheckBox();
-            checkBox8 = new CheckBox();
-            checkBox9 = new CheckBox();
-            checkBox10 = new CheckBox();
-            btnNext1 = new Button();
+            clbIllness = new CheckedListBox();
             SuspendLayout();
+            // 
+            // cbHypertension
+            // 
+            cbHypertension.AutoSize = true;
+            cbHypertension.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cbHypertension.Location = new Point(190, 101);
+            cbHypertension.Margin = new Padding(3, 4, 3, 4);
+            cbHypertension.Name = "cbHypertension";
+            cbHypertension.Size = new Size(125, 24);
+            cbHypertension.TabIndex = 1;
+            cbHypertension.Text = "Hypertension";
+            cbHypertension.UseVisualStyleBackColor = true;
+            cbHypertension.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // cbheartCondition
+            // 
+            cbheartCondition.AutoSize = true;
+            cbheartCondition.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cbheartCondition.Location = new Point(52, 69);
+            cbheartCondition.Margin = new Padding(3, 4, 3, 4);
+            cbheartCondition.Name = "cbheartCondition";
+            cbheartCondition.Size = new Size(142, 24);
+            cbheartCondition.TabIndex = 2;
+            cbheartCondition.Text = "Heart Condition";
+            cbheartCondition.UseVisualStyleBackColor = true;
+            // 
+            // cbPreviousInjuries
+            // 
+            cbPreviousInjuries.AutoSize = true;
+            cbPreviousInjuries.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cbPreviousInjuries.Location = new Point(64, 115);
+            cbPreviousInjuries.Margin = new Padding(3, 4, 3, 4);
+            cbPreviousInjuries.Name = "cbPreviousInjuries";
+            cbPreviousInjuries.Size = new Size(146, 24);
+            cbPreviousInjuries.TabIndex = 3;
+            cbPreviousInjuries.Text = "Previous injuries";
+            cbPreviousInjuries.UseVisualStyleBackColor = true;
+            // 
+            // cbJointProblems
+            // 
+            cbJointProblems.AutoSize = true;
+            cbJointProblems.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cbJointProblems.Location = new Point(199, 147);
+            cbJointProblems.Margin = new Padding(3, 4, 3, 4);
+            cbJointProblems.Name = "cbJointProblems";
+            cbJointProblems.Size = new Size(136, 24);
+            cbJointProblems.TabIndex = 4;
+            cbJointProblems.Text = "Joint problems";
+            cbJointProblems.UseVisualStyleBackColor = true;
+            cbJointProblems.CheckedChanged += checkBox4_CheckedChanged;
+            // 
+            // cbDiabetes
+            // 
+            cbDiabetes.AutoSize = true;
+            cbDiabetes.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cbDiabetes.Location = new Point(79, 151);
+            cbDiabetes.Margin = new Padding(3, 4, 3, 4);
+            cbDiabetes.Name = "cbDiabetes";
+            cbDiabetes.Size = new Size(92, 24);
+            cbDiabetes.TabIndex = 5;
+            cbDiabetes.Text = "Diabetes";
+            cbDiabetes.UseVisualStyleBackColor = true;
+            cbDiabetes.CheckedChanged += checkBox5_CheckedChanged;
+            // 
+            // cbPostSurgeryRecovery
+            // 
+            cbPostSurgeryRecovery.AutoSize = true;
+            cbPostSurgeryRecovery.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cbPostSurgeryRecovery.Location = new Point(476, 101);
+            cbPostSurgeryRecovery.Margin = new Padding(3, 4, 3, 4);
+            cbPostSurgeryRecovery.Name = "cbPostSurgeryRecovery";
+            cbPostSurgeryRecovery.Size = new Size(190, 24);
+            cbPostSurgeryRecovery.TabIndex = 6;
+            cbPostSurgeryRecovery.Text = "Post Surgery Recovery";
+            cbPostSurgeryRecovery.UseVisualStyleBackColor = true;
+            // 
+            // cbScoliosis
+            // 
+            cbScoliosis.AutoSize = true;
+            cbScoliosis.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cbScoliosis.Location = new Point(576, 133);
+            cbScoliosis.Margin = new Padding(3, 4, 3, 4);
+            cbScoliosis.Name = "cbScoliosis";
+            cbScoliosis.Size = new Size(90, 24);
+            cbScoliosis.TabIndex = 7;
+            cbScoliosis.Text = "Scoliosis";
+            cbScoliosis.UseVisualStyleBackColor = true;
+            cbScoliosis.CheckedChanged += checkBox7_CheckedChanged;
+            // 
+            // cbChronicFatigueSyndrome
+            // 
+            cbChronicFatigueSyndrome.AutoSize = true;
+            cbChronicFatigueSyndrome.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cbChronicFatigueSyndrome.Location = new Point(364, 69);
+            cbChronicFatigueSyndrome.Margin = new Padding(3, 4, 3, 4);
+            cbChronicFatigueSyndrome.Name = "cbChronicFatigueSyndrome";
+            cbChronicFatigueSyndrome.Size = new Size(215, 24);
+            cbChronicFatigueSyndrome.TabIndex = 8;
+            cbChronicFatigueSyndrome.Text = "Chronic Fatigue Syndrome";
+            cbChronicFatigueSyndrome.UseVisualStyleBackColor = true;
+            cbChronicFatigueSyndrome.CheckedChanged += checkBox8_CheckedChanged;
+            // 
+            // cbLungCondition
+            // 
+            cbLungCondition.AutoSize = true;
+            cbLungCondition.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cbLungCondition.Location = new Point(410, 133);
+            cbLungCondition.Margin = new Padding(3, 4, 3, 4);
+            cbLungCondition.Name = "cbLungCondition";
+            cbLungCondition.Size = new Size(138, 24);
+            cbLungCondition.TabIndex = 9;
+            cbLungCondition.Text = "Lung Condition";
+            cbLungCondition.UseVisualStyleBackColor = true;
+            // 
+            // cbGout
+            // 
+            cbGout.AutoSize = true;
+            cbGout.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cbGout.Location = new Point(632, 47);
+            cbGout.Margin = new Padding(3, 4, 3, 4);
+            cbGout.Name = "cbGout";
+            cbGout.Size = new Size(66, 24);
+            cbGout.TabIndex = 10;
+            cbGout.Text = "Gout";
+            cbGout.UseVisualStyleBackColor = true;
+            cbGout.CheckedChanged += checkBox10_CheckedChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(243, 51);
+            label1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(364, 360);
             label1.Name = "label1";
-            label1.Size = new Size(318, 29);
-            label1.TabIndex = 0;
-            label1.Text = "Please pick from this choices: ";
-            label1.TextAlign = ContentAlignment.TopCenter;
+            label1.Size = new Size(73, 35);
+            label1.TabIndex = 12;
+            label1.Text = "Next";
+            label1.Click += label1_Click;
             // 
-            // checkBox1
+            // clbIllness
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(192, 124);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(119, 24);
-            checkBox1.TabIndex = 1;
-            checkBox1.Text = "Hypertension";
-            checkBox1.UseVisualStyleBackColor = true;
+            clbIllness.BackColor = Color.Beige;
+            clbIllness.ColumnWidth = 500;
+            clbIllness.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            clbIllness.FormattingEnabled = true;
+            clbIllness.Items.AddRange(new object[] { "Heart Condition", "Previous injuries", "Diabetes", "Hypertension", "Jointproblems", "Chronic Fatigue Syndrome", "Post Surgery Recovery", "Lung Condition", "Gout", "Scoliosis" });
+            clbIllness.Location = new Point(312, 79);
+            clbIllness.Margin = new Padding(4);
+            clbIllness.MultiColumn = true;
+            clbIllness.Name = "clbIllness";
+            clbIllness.Size = new Size(257, 254);
+            clbIllness.TabIndex = 13;
+            clbIllness.SelectedIndexChanged += clbIllness_SelectedIndexChanged;
             // 
-            // checkBox2
-            // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(192, 165);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(137, 24);
-            checkBox2.TabIndex = 2;
-            checkBox2.Text = "Heart Condition";
-            checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(192, 205);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(137, 24);
-            checkBox3.TabIndex = 3;
-            checkBox3.Text = "Previous injuries";
-            checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(192, 248);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(129, 24);
-            checkBox4.TabIndex = 4;
-            checkBox4.Text = "Joint problems";
-            checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(192, 292);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(90, 24);
-            checkBox5.TabIndex = 5;
-            checkBox5.Text = "Diabetes";
-            checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            checkBox6.AutoSize = true;
-            checkBox6.Location = new Point(476, 124);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(176, 24);
-            checkBox6.TabIndex = 6;
-            checkBox6.Text = "Post Surgery Recovery";
-            checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            checkBox7.AutoSize = true;
-            checkBox7.Location = new Point(476, 165);
-            checkBox7.Name = "checkBox7";
-            checkBox7.Size = new Size(88, 24);
-            checkBox7.TabIndex = 7;
-            checkBox7.Text = "Scoliosis";
-            checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox8
-            // 
-            checkBox8.AutoSize = true;
-            checkBox8.Location = new Point(476, 205);
-            checkBox8.Name = "checkBox8";
-            checkBox8.Size = new Size(204, 24);
-            checkBox8.TabIndex = 8;
-            checkBox8.Text = "Chronic Fatigue Syndrome";
-            checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            checkBox9.AutoSize = true;
-            checkBox9.Location = new Point(476, 248);
-            checkBox9.Name = "checkBox9";
-            checkBox9.Size = new Size(132, 24);
-            checkBox9.TabIndex = 9;
-            checkBox9.Text = "Lung Condition";
-            checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // checkBox10
-            // 
-            checkBox10.AutoSize = true;
-            checkBox10.Location = new Point(476, 292);
-            checkBox10.Name = "checkBox10";
-            checkBox10.Size = new Size(63, 24);
-            checkBox10.TabIndex = 10;
-            checkBox10.Text = "Gout";
-            checkBox10.UseVisualStyleBackColor = true;
-            checkBox10.CheckedChanged += checkBox10_CheckedChanged;
-            // 
-            // btnNext1
-            // 
-            btnNext1.Location = new Point(353, 358);
-            btnNext1.Name = "btnNext1";
-            btnNext1.Size = new Size(94, 29);
-            btnNext1.TabIndex = 11;
-            btnNext1.Text = "Next";
-            btnNext1.UseVisualStyleBackColor = true;
-            btnNext1.Click += btnNext1_Click;
-            // 
-            // form5
+            // Form5
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(btnNext1);
-            Controls.Add(checkBox10);
-            Controls.Add(checkBox9);
-            Controls.Add(checkBox8);
-            Controls.Add(checkBox7);
-            Controls.Add(checkBox6);
-            Controls.Add(checkBox5);
-            Controls.Add(checkBox4);
-            Controls.Add(checkBox3);
-            Controls.Add(checkBox2);
-            Controls.Add(checkBox1);
+            BackColor = Color.Beige;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(800, 449);
+            Controls.Add(clbIllness);
             Controls.Add(label1);
-            Name = "form5";
+            Controls.Add(cbGout);
+            Controls.Add(cbLungCondition);
+            Controls.Add(cbChronicFatigueSyndrome);
+            Controls.Add(cbScoliosis);
+            Controls.Add(cbPostSurgeryRecovery);
+            Controls.Add(cbDiabetes);
+            Controls.Add(cbJointProblems);
+            Controls.Add(cbPreviousInjuries);
+            Controls.Add(cbheartCondition);
+            Controls.Add(cbHypertension);
+            DoubleBuffered = true;
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Form5";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FitCheck";
+            Load += Form5_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
+        private CheckBox cbHypertension;
+        private CheckBox cbheartCondition;
+        private CheckBox cbPreviousInjuries;
+        private CheckBox cbJointProblems;
+        private CheckBox cbDiabetes;
+        private CheckBox cbPostSurgeryRecovery;
+        private CheckBox cbScoliosis;
+        private CheckBox cbChronicFatigueSyndrome;
+        private CheckBox cbLungCondition;
+        private CheckBox cbGout;
         private Label label1;
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
-        private CheckBox checkBox3;
-        private CheckBox checkBox4;
-        private CheckBox checkBox5;
-        private CheckBox checkBox6;
-        private CheckBox checkBox7;
-        private CheckBox checkBox8;
-        private CheckBox checkBox9;
-        private CheckBox checkBox10;
-        private Button btnNext1;
+        private CheckedListBox clbIllness;
     }
 }

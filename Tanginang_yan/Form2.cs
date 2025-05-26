@@ -42,7 +42,7 @@ namespace Tanginang_yan
 
                     double heightnum = Convert.ToDouble(txtHeight.Text);
                     double weightnum = Convert.ToDouble(txtWeight.Text);
-                    
+
 
                     double bmi = (weightnum / (heightnum * heightnum));
 
@@ -50,6 +50,16 @@ namespace Tanginang_yan
                 }
             }
             catch (Exception) { }
+        }
+
+        private void lblBMI_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
