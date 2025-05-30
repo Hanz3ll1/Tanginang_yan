@@ -1,4 +1,4 @@
-﻿namespace Tanginang_yan
+﻿namespace FinalProject
 {
     partial class Form7
     {
@@ -119,12 +119,14 @@
             // clbVegitarian
             // 
             clbVegitarian.BackColor = Color.Beige;
+            clbVegitarian.ColumnWidth = 300;
             clbVegitarian.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             clbVegitarian.FormattingEnabled = true;
             clbVegitarian.Items.AddRange(new object[] { "Fexitarian", "Lacto-ovo vegetarian", "Lacto-vegetarian", "Ovo-Vegetarian", "Vegan", "Raw-Vegan" });
-            clbVegitarian.Location = new Point(311, 178);
+            clbVegitarian.Location = new Point(168, 170);
+            clbVegitarian.MultiColumn = true;
             clbVegitarian.Name = "clbVegitarian";
-            clbVegitarian.Size = new Size(210, 129);
+            clbVegitarian.Size = new Size(465, 104);
             clbVegitarian.TabIndex = 13;
             // 
             // Form7

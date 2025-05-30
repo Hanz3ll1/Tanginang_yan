@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tanginang_yan
+namespace FinalProject
 {
     public partial class Form7 : Form
     {

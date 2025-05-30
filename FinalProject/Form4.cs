@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tanginang_yan
+namespace FinalProject
 {
     public partial class Form4 : Form
     {
@@ -24,12 +24,12 @@ namespace Tanginang_yan
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -41,7 +41,12 @@ namespace Tanginang_yan
         private void label2_Click(object sender, EventArgs e)
         {
             new Form6().Show();
-            Hide();
+            this.Hide();
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

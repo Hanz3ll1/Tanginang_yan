@@ -1,4 +1,4 @@
-﻿namespace Tanginang_yan
+﻿namespace FinalProject
 {
     partial class Form2
     {

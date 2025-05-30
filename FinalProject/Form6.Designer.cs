@@ -1,4 +1,4 @@
-﻿namespace Tanginang_yan
+﻿namespace FinalProject
 {
     partial class Form6
     {
@@ -101,6 +101,7 @@
             // clbFood
             // 
             clbFood.BackColor = Color.Beige;
+            clbFood.CheckOnClick = true;
             clbFood.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             clbFood.FormattingEnabled = true;
             clbFood.Items.AddRange(new object[] { "Vegatarian", "Carnivore", "Pescatarian", "Mix" });

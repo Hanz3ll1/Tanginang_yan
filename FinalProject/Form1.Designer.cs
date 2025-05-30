@@ -1,4 +1,4 @@
-﻿namespace Tanginang_yan
+﻿namespace FinalProject
 {
     partial class Form1
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             txtUserName = new TextBox();
             txtPassWord = new TextBox();
             lblLogIn = new Label();
@@ -35,10 +36,10 @@
             // 
             // txtUserName
             // 
-            txtUserName.BackColor = SystemColors.Info;
+            txtUserName.BackColor = SystemColors.ControlDarkDark;
             txtUserName.BorderStyle = BorderStyle.None;
             txtUserName.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtUserName.Location = new Point(434, 149);
+            txtUserName.Location = new Point(293, 211);
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(210, 20);
             txtUserName.TabIndex = 2;
@@ -46,10 +47,10 @@
             // 
             // txtPassWord
             // 
-            txtPassWord.BackColor = SystemColors.Info;
+            txtPassWord.BackColor = SystemColors.ControlDarkDark;
             txtPassWord.BorderStyle = BorderStyle.None;
             txtPassWord.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtPassWord.Location = new Point(434, 226);
+            txtPassWord.Location = new Point(293, 288);
             txtPassWord.Name = "txtPassWord";
             txtPassWord.Size = new Size(210, 20);
             txtPassWord.TabIndex = 4;
@@ -72,9 +73,9 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Beige;
-            BackgroundImage = Properties.Resources.clicks;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(782, 437);
+            ClientSize = new Size(778, 437);
             Controls.Add(lblLogIn);
             Controls.Add(txtPassWord);
             Controls.Add(txtUserName);

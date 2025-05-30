@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static Tanginang_yan.Form3;
+using static FinalProject.Form3;
 
-namespace Tanginang_yan
+namespace FinalProject
 {
     public partial class Form3 : Form
     {
@@ -42,8 +42,8 @@ namespace Tanginang_yan
             //}
         }
 
-       
-       
+
+
 
         public void label2_Click(object sender, EventArgs e)
         {
@@ -166,12 +166,17 @@ namespace Tanginang_yan
 
         private void cbChicken_CheckedChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         public void clbAllergies_SelectedIndexChanged(object sender, EventArgs e)
         {
-                
+
+        }
+
+        private void CbPeaNuts_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

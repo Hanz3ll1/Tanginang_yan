@@ -1,4 +1,4 @@
-﻿namespace Tanginang_yan
+﻿namespace FinalProject
 {
     partial class Form5
     {
@@ -58,6 +58,7 @@
             // 
             // cbheartCondition
             // 
+            cbheartCondition.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             cbheartCondition.AutoSize = true;
             cbheartCondition.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cbheartCondition.Location = new Point(52, 69);
@@ -70,6 +71,7 @@
             // 
             // cbPreviousInjuries
             // 
+            cbPreviousInjuries.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             cbPreviousInjuries.AutoSize = true;
             cbPreviousInjuries.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cbPreviousInjuries.Location = new Point(64, 115);
@@ -171,6 +173,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(364, 360);
@@ -183,15 +186,15 @@
             // clbIllness
             // 
             clbIllness.BackColor = Color.Beige;
-            clbIllness.ColumnWidth = 500;
+            clbIllness.ColumnWidth = 300;
             clbIllness.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             clbIllness.FormattingEnabled = true;
             clbIllness.Items.AddRange(new object[] { "Heart Condition", "Previous injuries", "Diabetes", "Hypertension", "Jointproblems", "Chronic Fatigue Syndrome", "Post Surgery Recovery", "Lung Condition", "Gout", "Scoliosis" });
-            clbIllness.Location = new Point(268, 80);
+            clbIllness.Location = new Point(132, 183);
             clbIllness.Margin = new Padding(4);
             clbIllness.MultiColumn = true;
             clbIllness.Name = "clbIllness";
-            clbIllness.Size = new Size(257, 254);
+            clbIllness.Size = new Size(544, 129);
             clbIllness.TabIndex = 13;
             clbIllness.SelectedIndexChanged += clbIllness_SelectedIndexChanged;
             // 

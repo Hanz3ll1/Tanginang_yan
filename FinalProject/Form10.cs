@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tanginang_yan
+namespace FinalProject
 {
     public partial class Form10 : Form
     {
@@ -20,7 +20,7 @@ namespace Tanginang_yan
 
         public void Form10_Load(object sender, EventArgs e)
         {
-                
+            //alergies part
             if (Form3.alergies.Contains("Chicken"))
             {
                 if(Form5.illness.Contains("Heart Condition"))
@@ -31,56 +31,66 @@ namespace Tanginang_yan
                         {
                             if(Form9.exercise.Contains("Strength Training"))
                             {
-                                label1.Text = "Aehanz ganda";
+                                label1.Text = "Aehanz at si ivan lang ang nag buuhat dito ";
                             }
                         }
                     }
                 }
             }
-            
+
             if (Form3.alergies.Contains("Shellfish"))
             {
-                if (Form5.illness.Contains("Heart Condition"))
+                if (Form5.illness.Contains("Diabetes"))
                 {
                     if (Form6.dish.Contains("Vegatarian"))
                     {
-                        if (Form7.gulay.Contains("Fexitarian"))
+                        if (Form7.gulay.Contains("Lacto-ovo vegetarian"))
                         {
-                            if (Form9.exercise.Contains("Strength Training"))
+                            if (Form9.exercise.Contains("Cardio"))
                             {
-                                label1.Text = "Aehanz chararat";
+                                label1.Text = "Aehanz lang magaling";
                             }
+                        }
+                    }
+                }
+            }
+            if (Form3.alergies.Contains("Soy"))
+            {
+                if (Form5.illness.Contains("Hypertension"))
+                {
+                    if (Form6.dish.Contains("Pescatarian"))
+                    {
+                        if (Form9.exercise.Contains("Balance Exercise"))
+                        {
+                            label1.Text = "Aehanz namujane";
                         }
                     }
                 }
             }
             if (Form3.alergies.Contains("Wheat"))
             {
-                if (Form5.illness.Contains("Heart Condition"))
+                if (Form5.illness.Contains("Joint Problems"))
                 {
-                    if (Form6.dish.Contains("Vegatarian"))
+                    if (Form6.dish.Contains("Pescatarian"))
                     {
-                        if (Form7.gulay.Contains("Fexitarian"))
+                        if (Form9.exercise.Contains("Balance Exercise"))
                         {
-                            if (Form9.exercise.Contains("Strength Training"))
-                            {
-                                label1.Text = "Aehanz namujane";
-                            }
+                            label1.Text = "Aehanz Kyle";
                         }
                     }
                 }
             }
             if (Form3.alergies.Contains("Egg"))
             {
-                if (Form5.illness.Contains("Heart Condition"))
+                if (Form5.illness.Contains("Chronic Fatigue"))
                 {
                     if (Form6.dish.Contains("Vegatarian"))
                     {
-                        if (Form7.gulay.Contains("Fexitarian"))
+                        if (Form7.gulay.Contains("Vegan"))
                         {
-                            if (Form9.exercise.Contains("Strength Training"))
+                            if (Form9.exercise.Contains("Flexibility"))
                             {
-                                label1.Text = "Aehanz namujane";
+                                label1.Text = "Aehanz Versosa";
                             }
                         }
                     }
@@ -88,47 +98,41 @@ namespace Tanginang_yan
             }
             if (Form3.alergies.Contains("Fish"))
             {
-                if (Form5.illness.Contains("Heart Condition"))
+                if (Form5.illness.Contains("Post Surgery Recovery"))
                 {
-                    if (Form6.dish.Contains("Vegatarian"))
+                    if (Form6.dish.Contains("Mix"))
                     {
-                        if (Form7.gulay.Contains("Fexitarian"))
+                        if (Form9.exercise.Contains("Balance"))
                         {
-                            if (Form9.exercise.Contains("Strength Training"))
-                            {
-                                label1.Text = "Aehanz namujane";
-                            }
+                            label1.Text = "Aehanz Gray";
                         }
                     }
                 }
             }
             if (Form3.alergies.Contains("Pea-nuts"))
             {
-                if (Form5.illness.Contains("Heart Condition"))
+                if (Form5.illness.Contains("Lung Condition"))
                 {
-                    if (Form6.dish.Contains("Vegatarian"))
+                    if (Form6.dish.Contains("Pescatarian"))
                     {
-                        if (Form7.gulay.Contains("Fexitarian"))
+                        if (Form9.exercise.Contains("Balance Exercise"))
                         {
-                            if (Form9.exercise.Contains("Strength Training"))
-                            {
-                                label1.Text = "Aehanz namujane";
-                            }
+                            label1.Text = "Aehanz Gesmundo";
                         }
                     }
                 }
             }
-            if (Form3.alergies.Contains("Sesane"))
+            if (Form3.alergies.Contains("Sesame"))
             {
-                if (Form5.illness.Contains("Heart Condition"))
+                if (Form5.illness.Contains("Previous Injuries"))
                 {
                     if (Form6.dish.Contains("Vegatarian"))
                     {
-                        if (Form7.gulay.Contains("Fexitarian"))
+                        if (Form7.gulay.Contains("Vegan"))
                         {
-                            if (Form9.exercise.Contains("Strength Training"))
+                            if (Form9.exercise.Contains("Balance Exercise"))
                             {
-                                label1.Text = "Aehanz namujane";
+                                label1.Text = "Aehanz Almadin";
                             }
                         }
                     }
@@ -136,38 +140,32 @@ namespace Tanginang_yan
             }
             if (Form3.alergies.Contains("Tree-nuts"))
             {
-                if (Form5.illness.Contains("Heart Condition"))
+                if (Form5.illness.Contains("Gout"))
                 {
-                    if (Form6.dish.Contains("Vegatarian"))
+                    if (Form6.dish.Contains("Mix"))
                     {
-                        if (Form7.gulay.Contains("Fexitarian"))
+                        if (Form9.exercise.Contains("Balance Excercise"))
                         {
-                            if (Form9.exercise.Contains("Strength Training"))
-                            {
-                                label1.Text = "Aehanz namujane";
-                            }
+                            label1.Text = "Aehanz strata";
                         }
                     }
                 }
             }
             if (Form3.alergies.Contains("Milk"))
             {
-                if (Form5.illness.Contains("Heart Condition"))
+                if (Form5.illness.Contains("Scoliosis"))
                 {
-                                label1.Text = "Aehanz pogi";
-                    if (Form6.dish.Contains("Vegatarian"))
+                    if (Form6.dish.Contains("Mix"))
                     {
-                        if (Form7.gulay.Contains("Fexitarian"))
-                        {
-                            if (Form9.exercise.Contains("Strength Training"))
+                        if (Form9.exercise.Contains("Flexibility"))
                             {
-                                label1.Text = "Aehanz pogi";
+                                label1.Text = "Aehanz kurba";
                             }
-                        }
                     }
                 }
             }
-                                label1.Text = "Aehanz pogi";
+           
+            // dish part
             if (Form3.alergies.Contains("Shellfish"))
             {
                 if (Form5.illness.Contains("Previous injuries"))
@@ -178,7 +176,7 @@ namespace Tanginang_yan
                         {
                             if (Form9.exercise.Contains("Cardio"))
                             {
-                                label1.Text = "Aehanz Sarap";
+                                label1.Text = "Aehanz takutt akoooo";
                             }
                         }
                     }
@@ -198,6 +196,7 @@ namespace Tanginang_yan
                     }
                 }
             }
+
 
         }
 

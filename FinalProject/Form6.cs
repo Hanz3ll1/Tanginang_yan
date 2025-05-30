@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
-namespace Tanginang_yan
+namespace FinalProject
 {
     public partial class Form6 : Form
     {
@@ -72,12 +73,41 @@ namespace Tanginang_yan
             foreach (var food in clbFood.CheckedItems)
             {
                 dish.Add(food.ToString()!);
-            }
 
-            Form7 form7 = new Form7();
-            form7.ShowDialog();
-            this.Hide();
-            return;
+                if (clbFood.CheckedItems.Contains("Vegatarian"))
+                {
+                    Form7 form7 = new Form7();
+                    form7.ShowDialog();
+                    this.Hide();
+                    return;
+                }
+                else if (clbFood.CheckedItems.Contains("Mix"))
+                {
+                    Form9 form9 = new Form9();
+                    form9.ShowDialog();
+                    this.Hide(); return;
+                }
+
+                else if (clbFood.CheckedItems.Contains("Carnivore"))
+                {
+                    Form9 form9 = new Form9();
+                    form9.ShowDialog();
+                    this.Hide(); return;
+                }
+
+               else if (clbFood.CheckedItems.Contains("Pescatarian") )
+                {
+                    Form9 form9 = new Form9();
+                    form9.ShowDialog();
+                    this.Hide(); return;
+                }
+                
+            }
+            
+
+            
+
+            
             /* if (cbVegatarian.Checked)
             {
                 Form7 form7 = new Form7();

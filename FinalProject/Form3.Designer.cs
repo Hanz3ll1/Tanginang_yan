@@ -1,4 +1,4 @@
-﻿namespace Tanginang_yan
+﻿namespace FinalProject
 {
     partial class Form3
     {
@@ -118,6 +118,7 @@
             CbPeaNuts.TabIndex = 5;
             CbPeaNuts.Text = "Pea-nuts";
             CbPeaNuts.UseVisualStyleBackColor = false;
+            CbPeaNuts.CheckedChanged += CbPeaNuts_CheckedChanged;
             // 
             // cbWheat
             // 
@@ -206,15 +207,20 @@
             // 
             // clbAllergies
             // 
+            clbAllergies.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             clbAllergies.BackColor = Color.Beige;
-            clbAllergies.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            clbAllergies.CheckOnClick = true;
+            clbAllergies.ColumnWidth = 300;
+            clbAllergies.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             clbAllergies.FormattingEnabled = true;
-            clbAllergies.Items.AddRange(new object[] { "Chicken", "Shellfish", "Soy", "Wheat", "Egg", "Fish", "Pea-nuts", "Sesame", "Tree-nuts", "MIlk" });
-            clbAllergies.Location = new Point(251, 134);
+            clbAllergies.Items.AddRange(new object[] { "Chicken", "Egg", "Fish", "MIlk", "Pea-nuts", "Sesame", "Shellfish", "Soy", "Tree-nuts", "Wheat" });
+            clbAllergies.Location = new Point(174, 123);
             clbAllergies.MultiColumn = true;
             clbAllergies.Name = "clbAllergies";
-            clbAllergies.Size = new Size(286, 178);
+            clbAllergies.Size = new Size(432, 178);
+            clbAllergies.Sorted = true;
             clbAllergies.TabIndex = 14;
+            clbAllergies.ThreeDCheckBoxes = true;
             clbAllergies.SelectedIndexChanged += clbAllergies_SelectedIndexChanged;
             // 
             // Form3
