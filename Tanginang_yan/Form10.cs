@@ -38,7 +38,137 @@ namespace Tanginang_yan
                 }
             }
             
-            if(Form3.alergies.Contains("Shellfish"))
+            if (Form3.alergies.Contains("Shellfish"))
+            {
+                if (Form5.illness.Contains("Heart Condition"))
+                {
+                    if (Form6.dish.Contains("Vegatarian"))
+                    {
+                        if (Form7.gulay.Contains("Fexitarian"))
+                        {
+                            if (Form9.exercise.Contains("Strength Training"))
+                            {
+                                label1.Text = "Aehanz chararat";
+                            }
+                        }
+                    }
+                }
+            }
+            if (Form3.alergies.Contains("Wheat"))
+            {
+                if (Form5.illness.Contains("Heart Condition"))
+                {
+                    if (Form6.dish.Contains("Vegatarian"))
+                    {
+                        if (Form7.gulay.Contains("Fexitarian"))
+                        {
+                            if (Form9.exercise.Contains("Strength Training"))
+                            {
+                                label1.Text = "Aehanz namujane";
+                            }
+                        }
+                    }
+                }
+            }
+            if (Form3.alergies.Contains("Egg"))
+            {
+                if (Form5.illness.Contains("Heart Condition"))
+                {
+                    if (Form6.dish.Contains("Vegatarian"))
+                    {
+                        if (Form7.gulay.Contains("Fexitarian"))
+                        {
+                            if (Form9.exercise.Contains("Strength Training"))
+                            {
+                                label1.Text = "Aehanz namujane";
+                            }
+                        }
+                    }
+                }
+            }
+            if (Form3.alergies.Contains("Fish"))
+            {
+                if (Form5.illness.Contains("Heart Condition"))
+                {
+                    if (Form6.dish.Contains("Vegatarian"))
+                    {
+                        if (Form7.gulay.Contains("Fexitarian"))
+                        {
+                            if (Form9.exercise.Contains("Strength Training"))
+                            {
+                                label1.Text = "Aehanz namujane";
+                            }
+                        }
+                    }
+                }
+            }
+            if (Form3.alergies.Contains("Pea-nuts"))
+            {
+                if (Form5.illness.Contains("Heart Condition"))
+                {
+                    if (Form6.dish.Contains("Vegatarian"))
+                    {
+                        if (Form7.gulay.Contains("Fexitarian"))
+                        {
+                            if (Form9.exercise.Contains("Strength Training"))
+                            {
+                                label1.Text = "Aehanz namujane";
+                            }
+                        }
+                    }
+                }
+            }
+            if (Form3.alergies.Contains("Sesane"))
+            {
+                if (Form5.illness.Contains("Heart Condition"))
+                {
+                    if (Form6.dish.Contains("Vegatarian"))
+                    {
+                        if (Form7.gulay.Contains("Fexitarian"))
+                        {
+                            if (Form9.exercise.Contains("Strength Training"))
+                            {
+                                label1.Text = "Aehanz namujane";
+                            }
+                        }
+                    }
+                }
+            }
+            if (Form3.alergies.Contains("Tree-nuts"))
+            {
+                if (Form5.illness.Contains("Heart Condition"))
+                {
+                    if (Form6.dish.Contains("Vegatarian"))
+                    {
+                        if (Form7.gulay.Contains("Fexitarian"))
+                        {
+                            if (Form9.exercise.Contains("Strength Training"))
+                            {
+                                label1.Text = "Aehanz namujane";
+                            }
+                        }
+                    }
+                }
+            }
+            if (Form3.alergies.Contains("Milk"))
+            {
+                if (Form5.illness.Contains("Heart Condition"))
+                {
+                                label1.Text = "Aehanz pogi";
+                    if (Form6.dish.Contains("Vegatarian"))
+                    {
+                        if (Form7.gulay.Contains("Fexitarian"))
+                        {
+                            if (Form9.exercise.Contains("Strength Training"))
+                            {
+                                label1.Text = "Aehanz pogi";
+                            }
+                        }
+                    }
+                }
+            }
+                                label1.Text = "Aehanz pogi";
+            if (Form3.alergies.Contains("Shellfish"))
             {
                 if (Form5.illness.Contains("Previous injuries"))
                 {
