@@ -67,16 +67,9 @@ namespace FinalProject
 
         }
 
-        public bool cbheartCondition_CheckedChanged(object sender, EventArgs e)
+        public void cbheartCondition_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbheartCondition.Checked)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            
         }
 
         private void Form5_Load(object sender, EventArgs e)

@@ -53,14 +53,8 @@ namespace FinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (cbVegatarian.Checked)
-            {
-                Form4 form4 = new Form4();
-                form4.Show();
-                this.Hide();
-                return;
+            
             }
-        }
 
         public void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
