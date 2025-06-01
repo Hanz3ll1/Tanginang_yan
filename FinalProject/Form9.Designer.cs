@@ -1,6 +1,6 @@
 ﻿namespace FinalProject
 {
-    partial class Form9
+    partial class FitCheck
     {
         /// <summary>
         /// Required designer variable.
@@ -28,103 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cbStrengthTraining = new CheckBox();
-            cbCardio = new CheckBox();
-            cbFlexibility = new CheckBox();
-            cbBalanceExcercise = new CheckBox();
-            label1 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FitCheck));
             clbWorkout = new CheckedListBox();
+            label2 = new Label();
+            btnNext = new Button();
             SuspendLayout();
-            // 
-            // cbStrengthTraining
-            // 
-            cbStrengthTraining.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            cbStrengthTraining.AutoSize = true;
-            cbStrengthTraining.BackColor = Color.Beige;
-            cbStrengthTraining.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbStrengthTraining.Location = new Point(145, 96);
-            cbStrengthTraining.Name = "cbStrengthTraining";
-            cbStrengthTraining.Size = new Size(174, 27);
-            cbStrengthTraining.TabIndex = 0;
-            cbStrengthTraining.Text = "Strength Training";
-            cbStrengthTraining.UseVisualStyleBackColor = false;
-            // 
-            // cbCardio
-            // 
-            cbCardio.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            cbCardio.AutoSize = true;
-            cbCardio.BackColor = Color.Beige;
-            cbCardio.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbCardio.Location = new Point(344, 85);
-            cbCardio.Name = "cbCardio";
-            cbCardio.Size = new Size(85, 27);
-            cbCardio.TabIndex = 1;
-            cbCardio.Text = "Cardio";
-            cbCardio.UseVisualStyleBackColor = false;
-            // 
-            // cbFlexibility
-            // 
-            cbFlexibility.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            cbFlexibility.AutoSize = true;
-            cbFlexibility.BackColor = Color.Beige;
-            cbFlexibility.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbFlexibility.Location = new Point(467, 96);
-            cbFlexibility.Name = "cbFlexibility";
-            cbFlexibility.Size = new Size(111, 27);
-            cbFlexibility.TabIndex = 2;
-            cbFlexibility.Text = "Flexibility";
-            cbFlexibility.UseVisualStyleBackColor = false;
-            // 
-            // cbBalanceExcercise
-            // 
-            cbBalanceExcercise.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            cbBalanceExcercise.AutoSize = true;
-            cbBalanceExcercise.BackColor = Color.Beige;
-            cbBalanceExcercise.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbBalanceExcercise.Location = new Point(584, 85);
-            cbBalanceExcercise.Name = "cbBalanceExcercise";
-            cbBalanceExcercise.Size = new Size(161, 27);
-            cbBalanceExcercise.TabIndex = 3;
-            cbBalanceExcercise.Text = "Balance Exercise";
-            cbBalanceExcercise.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.BackColor = Color.Beige;
-            label1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(367, 362);
-            label1.Name = "label1";
-            label1.Size = new Size(73, 35);
-            label1.TabIndex = 4;
-            label1.Text = "Next";
-            label1.Click += label1_Click;
             // 
             // clbWorkout
             // 
+            clbWorkout.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            clbWorkout.BackColor = Color.Black;
+            clbWorkout.BorderStyle = BorderStyle.None;
+            clbWorkout.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            clbWorkout.ForeColor = SystemColors.ButtonHighlight;
             clbWorkout.FormattingEnabled = true;
             clbWorkout.Items.AddRange(new object[] { "Strength Training", "Cardio", "Flexibility", "Balance Exercise" });
-            clbWorkout.Location = new Point(344, 160);
+            clbWorkout.Location = new Point(306, 154);
             clbWorkout.Name = "clbWorkout";
-            clbWorkout.Size = new Size(150, 114);
+            clbWorkout.Size = new Size(197, 116);
             clbWorkout.TabIndex = 5;
             // 
-            // Form9
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Felix Titling", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(107, 94);
+            label2.Name = "label2";
+            label2.Size = new Size(627, 35);
+            label2.TabIndex = 6;
+            label2.Text = "CHOOSE YOUR PREFERRED WORKOUT";
+            // 
+            // btnNext
+            // 
+            btnNext.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnNext.Font = new Font("Felix Titling", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNext.Location = new Point(330, 309);
+            btnNext.Name = "btnNext";
+            btnNext.Size = new Size(148, 42);
+            btnNext.TabIndex = 7;
+            btnNext.Text = "NEXT";
+            btnNext.UseVisualStyleBackColor = true;
+            btnNext.Click += btnNext_Click;
+            // 
+            // FitCheck
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources._13;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnNext);
+            Controls.Add(label2);
             Controls.Add(clbWorkout);
-            Controls.Add(label1);
-            Controls.Add(cbBalanceExcercise);
-            Controls.Add(cbFlexibility);
-            Controls.Add(cbCardio);
-            Controls.Add(cbStrengthTraining);
             DoubleBuffered = true;
-            Name = "Form9";
+            Name = "FitCheck";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form9";
             ResumeLayout(false);
@@ -132,12 +92,8 @@
         }
 
         #endregion
-
-        private CheckBox cbStrengthTraining;
-        private CheckBox cbCardio;
-        private CheckBox cbFlexibility;
-        private CheckBox cbBalanceExcercise;
-        private Label label1;
         private CheckedListBox clbWorkout;
+        private Label label2;
+        private Button btnNext;
     }
 }

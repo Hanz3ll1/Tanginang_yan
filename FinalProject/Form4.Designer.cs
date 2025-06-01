@@ -28,44 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            label3 = new Label();
+            button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
-            // label1
+            // label3
             // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(256, 214);
-            label1.Name = "label1";
-            label1.Size = new Size(46, 28);
-            label1.TabIndex = 3;
-            label1.Text = "YES";
-            label1.Click += label1_Click_1;
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Felix Titling", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(113, 109);
+            label3.Name = "label3";
+            label3.Size = new Size(579, 70);
+            label3.TabIndex = 5;
+            label3.Text = "Do you have past sickness that \r\nwill hinder your workout?";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // button1
             // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(520, 214);
-            label2.Name = "label2";
-            label2.Size = new Size(43, 28);
-            label2.TabIndex = 4;
-            label2.Text = "NO";
-            label2.Click += label2_Click;
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button1.BackColor = Color.Transparent;
+            button1.FlatStyle = FlatStyle.System;
+            button1.Font = new Font("Felix Titling", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(208, 237);
+            button1.Name = "button1";
+            button1.Size = new Size(148, 42);
+            button1.TabIndex = 6;
+            button1.Text = "YES";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
+            // 
+            // button2
+            // 
+            button2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button2.BackColor = Color.White;
+            button2.FlatStyle = FlatStyle.System;
+            button2.Font = new Font("Felix Titling", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(459, 237);
+            button2.Name = "button2";
+            button2.Size = new Size(148, 42);
+            button2.TabIndex = 7;
+            button2.Text = "NO";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click_1;
             // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Beige;
-            BackgroundImage = Properties.Resources.clicks__3_;
+            BackColor = Color.Gray;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(label3);
             DoubleBuffered = true;
             Name = "Form4";
             StartPosition = FormStartPosition.CenterScreen;
@@ -76,7 +97,8 @@
         }
 
         #endregion
-        private Label label1;
-        private Label label2;
+        private Label label3;
+        private Button button1;
+        private Button button2;
     }
 }

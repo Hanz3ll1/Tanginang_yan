@@ -53,8 +53,8 @@ namespace FinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            }
+
+        }
 
         public void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
@@ -64,11 +64,26 @@ namespace FinalProject
         private void label1_Click_2(object sender, EventArgs e)
         {
 
+        }
+
+        private void cbCarnivore_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clbFood_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
             foreach (var food in clbFood.CheckedItems)
             {
                 dish.Add(food.ToString()!);
 
-                if (clbFood.CheckedItems.Contains("Vegatarian"))
+                if (clbFood.CheckedItems.Contains("Vegetarian"))
                 {
                     Form7 form7 = new Form7();
                     form7.ShowDialog();
@@ -77,60 +92,26 @@ namespace FinalProject
                 }
                 else if (clbFood.CheckedItems.Contains("Mix"))
                 {
-                    Form9 form9 = new Form9();
+                    FitCheck form9 = new FitCheck();
                     form9.ShowDialog();
                     this.Hide(); return;
                 }
 
                 else if (clbFood.CheckedItems.Contains("Carnivore"))
                 {
-                    Form9 form9 = new Form9();
-                    form9.ShowDialog();
+                    Form form8 = new Form8();
+                    form8.ShowDialog();
                     this.Hide(); return;
                 }
 
-               else if (clbFood.CheckedItems.Contains("Pescatarian") )
+                else if (clbFood.CheckedItems.Contains("Pescatarian"))
                 {
-                    Form9 form9 = new Form9();
+                    FitCheck form9 = new FitCheck();
                     form9.ShowDialog();
                     this.Hide(); return;
                 }
-                
+
             }
-            
-
-            
-
-            
-            /* if (cbVegatarian.Checked)
-            {
-                Form7 form7 = new Form7();
-                form7.Show();
-                this.Hide();
-                return;
-            }
-
-            if (cbCarnivore.Checked)
-            {
-                Form8 form8 = new Form8();
-                form8.Show();
-                this.Hide(); return;
-            }
-
-            if (cbPescatarian.Checked || cbMix.Checked)
-            {
-                Form9 form9 = new Form9();
-                form9.Show();
-                this.Hide();
-                return;
-            }*/
-
-
-        }
-
-        private void cbCarnivore_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

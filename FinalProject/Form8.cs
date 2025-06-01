@@ -20,59 +20,26 @@ namespace FinalProject
 
         private void label1_Click(object sender, EventArgs e)
         {
-            foreach (var meat in clbCarnivore.CheckedItems)
-            {
-                raw.Add(meat.ToString()!);
-            }
-
-            Form4 form4 = new Form4();
-            form4.ShowDialog();
-            this.Hide();
-            return;
-            /* if (cbHardCoreCarnivore.Checked)
-            {
-                Form9 form9 = new Form9();
-                form9.ShowDialog();
-                this.Hide();
-                return;
-            }
-
-            if (cbKetoCarnivore.Checked)
-            {
-                Form9 form9 = new Form9();
-                form9.ShowDialog();
-                this.Hide();
-                return;
-            }
-
-            if (cbLionDiet.Checked)
-            {
-                Form9 form9 = new Form9();
-                form9.ShowDialog();
-                this.Hide();
-                return;
-            }
-
-            if (cbModifiedCarnivore.Checked)
-            {
-                Form9 form9 = new Form9();
-                form9.ShowDialog();
-                this.Hide();
-                return;
-            }
-
-            if (cbStandardCarnivore.Checked)
-            {
-                Form9 form9 = new Form9();
-                form9.ShowDialog();
-                this.Hide();
-                return;
-            }*/
+            
+           
         }
 
         private void Form8_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            foreach (var meat in clbCarnivore.CheckedItems)
+            {
+                raw.Add(meat.ToString()!);
+            }
+
+            FitCheck form9 = new FitCheck();
+            form9.ShowDialog();
+            this.Hide();
+            return;
         }
     }
 }

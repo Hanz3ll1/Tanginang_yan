@@ -36,62 +36,21 @@ namespace FinalProject
 
         private void label1_Click_1(object sender, EventArgs e)
         {
+            
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             foreach (var vegitarian in clbVegitarian.CheckedItems)
             {
                 gulay.Add(vegitarian.ToString()!);
             }
 
-            Form9 form9 = new Form9();
+            FitCheck form9 = new FitCheck();
             form9.ShowDialog();
             this.Hide();
             return;
-            /*  if (cbFexitarian.Checked)
-            {
-                Form9 form9 = new Form9();
-                form9.ShowDialog();
-                this.Hide();
-                return;
-            }
-
-            if (cbLactoOvoVegetarian.Checked)
-            {
-                Form9 form9 = new Form9();
-                form9.ShowDialog();
-                this.Hide();
-                return;
-            }
-
-            if (cbLactoVegetarian.Checked)
-            {
-                Form9 form9 = new Form9();
-                form9.ShowDialog();
-                this.Hide();
-                return;
-            }
-
-            if (cbOvoVegetarian.Checked)
-            {
-                Form9 form9 = new Form9();
-                form9.ShowDialog();
-                this.Hide();
-                return;
-            }
-
-            if (cbRawVegan.Checked)
-            {
-                Form9 form9 = new Form9();
-                form9.ShowDialog();
-                this.Hide();
-                return;
-            }
-
-            if (cbVegan.Checked)
-            {
-                Form9 form9 = new Form9();
-                form9.ShowDialog();
-                this.Hide();
-                return;
-            }*/
         }
     }
 }

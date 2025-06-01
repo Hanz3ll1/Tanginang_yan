@@ -28,102 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cbVegatarian = new CheckBox();
-            cbCarnivore = new CheckBox();
-            cbPescatarian = new CheckBox();
-            cbMix = new CheckBox();
-            label1 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
             clbFood = new CheckedListBox();
+            label2 = new Label();
+            button1 = new Button();
             SuspendLayout();
-            // 
-            // cbVegatarian
-            // 
-            cbVegatarian.AutoSize = true;
-            cbVegatarian.BackColor = Color.Beige;
-            cbVegatarian.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbVegatarian.Location = new Point(219, 105);
-            cbVegatarian.Name = "cbVegatarian";
-            cbVegatarian.Size = new Size(118, 27);
-            cbVegatarian.TabIndex = 9;
-            cbVegatarian.Text = "Vegatarian";
-            cbVegatarian.UseVisualStyleBackColor = false;
-            cbVegatarian.CheckedChanged += checkBox1_CheckedChanged_1;
-            // 
-            // cbCarnivore
-            // 
-            cbCarnivore.AutoSize = true;
-            cbCarnivore.BackColor = Color.Beige;
-            cbCarnivore.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbCarnivore.Location = new Point(363, 105);
-            cbCarnivore.Name = "cbCarnivore";
-            cbCarnivore.Size = new Size(109, 27);
-            cbCarnivore.TabIndex = 11;
-            cbCarnivore.Text = "Carnivore";
-            cbCarnivore.UseVisualStyleBackColor = false;
-            cbCarnivore.CheckedChanged += cbCarnivore_CheckedChanged;
-            // 
-            // cbPescatarian
-            // 
-            cbPescatarian.AutoSize = true;
-            cbPescatarian.BackColor = Color.Beige;
-            cbPescatarian.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbPescatarian.Location = new Point(487, 105);
-            cbPescatarian.Name = "cbPescatarian";
-            cbPescatarian.Size = new Size(121, 27);
-            cbPescatarian.TabIndex = 12;
-            cbPescatarian.Text = "Pescatarian";
-            cbPescatarian.UseVisualStyleBackColor = false;
-            // 
-            // cbMix
-            // 
-            cbMix.AutoSize = true;
-            cbMix.BackColor = Color.Beige;
-            cbMix.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbMix.Location = new Point(636, 105);
-            cbMix.Name = "cbMix";
-            cbMix.Size = new Size(62, 27);
-            cbMix.TabIndex = 13;
-            cbMix.Text = "Mix";
-            cbMix.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Beige;
-            label1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(363, 361);
-            label1.Name = "label1";
-            label1.Size = new Size(73, 35);
-            label1.TabIndex = 14;
-            label1.Text = "Next";
-            label1.Click += label1_Click_2;
             // 
             // clbFood
             // 
-            clbFood.BackColor = Color.Beige;
+            clbFood.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            clbFood.BackColor = Color.Black;
+            clbFood.BorderStyle = BorderStyle.None;
             clbFood.CheckOnClick = true;
-            clbFood.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            clbFood.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            clbFood.ForeColor = Color.White;
             clbFood.FormattingEnabled = true;
-            clbFood.Items.AddRange(new object[] { "Vegatarian", "Carnivore", "Pescatarian", "Mix" });
-            clbFood.Location = new Point(337, 164);
+            clbFood.Items.AddRange(new object[] { "Vegetarian", "Carnivore", "Pescatarian", "Mix" });
+            clbFood.Location = new Point(347, 190);
             clbFood.Name = "clbFood";
-            clbFood.Size = new Size(150, 104);
+            clbFood.Size = new Size(206, 132);
             clbFood.TabIndex = 15;
+            clbFood.ThreeDCheckBoxes = true;
+            clbFood.SelectedIndexChanged += clbFood_SelectedIndexChanged;
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Felix Titling", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(240, 104);
+            label2.Name = "label2";
+            label2.Size = new Size(371, 43);
+            label2.TabIndex = 16;
+            label2.Text = "PREFERRED FOOD";
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button1.BackColor = Color.White;
+            button1.Font = new Font("Felix Titling", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(347, 349);
+            button1.Name = "button1";
+            button1.Size = new Size(148, 42);
+            button1.TabIndex = 17;
+            button1.Text = "NEXT";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
             // 
             // Form6
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(41, 54, 70);
-            BackgroundImage = Properties.Resources._10;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(label2);
             Controls.Add(clbFood);
-            Controls.Add(label1);
-            Controls.Add(cbMix);
-            Controls.Add(cbPescatarian);
-            Controls.Add(cbCarnivore);
-            Controls.Add(cbVegatarian);
             DoubleBuffered = true;
             Name = "Form6";
             StartPosition = FormStartPosition.CenterScreen;
@@ -134,11 +98,8 @@
         }
 
         #endregion
-        private CheckBox cbVegatarian;
-        private CheckBox cbCarnivore;
-        private CheckBox cbPescatarian;
-        private CheckBox cbMix;
-        private Label label1;
         private CheckedListBox clbFood;
+        private Label label2;
+        private Button button1;
     }
 }

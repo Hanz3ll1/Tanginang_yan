@@ -14,7 +14,7 @@ namespace FinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -45,6 +45,11 @@ namespace FinalProject
 
         private void label2_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
             if (txtUserName.Text == "Aehanz Kyle" && txtPassWord.Text == "Aehanzganda213")
             {
                 new Form2().Show();
@@ -57,6 +62,11 @@ namespace FinalProject
                 txtPassWord.Clear();
                 txtUserName.Focus();
             }
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+
         }
     }
 }

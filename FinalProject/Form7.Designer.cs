@@ -29,105 +29,54 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
-            cbFexitarian = new CheckBox();
-            cbLactoOvoVegetarian = new CheckBox();
-            cbLactoVegetarian = new CheckBox();
-            cbOvoVegetarian = new CheckBox();
-            cbVegan = new CheckBox();
-            cbRawVegan = new CheckBox();
-            label1 = new Label();
             clbVegitarian = new CheckedListBox();
+            label2 = new Label();
+            button1 = new Button();
             SuspendLayout();
-            // 
-            // cbFexitarian
-            // 
-            cbFexitarian.AutoSize = true;
-            cbFexitarian.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbFexitarian.Location = new Point(108, 93);
-            cbFexitarian.Name = "cbFexitarian";
-            cbFexitarian.Size = new Size(111, 27);
-            cbFexitarian.TabIndex = 6;
-            cbFexitarian.Text = "Fexitarian";
-            cbFexitarian.UseVisualStyleBackColor = true;
-            // 
-            // cbLactoOvoVegetarian
-            // 
-            cbLactoOvoVegetarian.AutoSize = true;
-            cbLactoOvoVegetarian.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbLactoOvoVegetarian.Location = new Point(225, 93);
-            cbLactoOvoVegetarian.Name = "cbLactoOvoVegetarian";
-            cbLactoOvoVegetarian.Size = new Size(201, 27);
-            cbLactoOvoVegetarian.TabIndex = 7;
-            cbLactoOvoVegetarian.Text = "Lacto-ovo vegetarian";
-            cbLactoOvoVegetarian.UseVisualStyleBackColor = true;
-            // 
-            // cbLactoVegetarian
-            // 
-            cbLactoVegetarian.AutoSize = true;
-            cbLactoVegetarian.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbLactoVegetarian.Location = new Point(159, 126);
-            cbLactoVegetarian.Name = "cbLactoVegetarian";
-            cbLactoVegetarian.Size = new Size(167, 27);
-            cbLactoVegetarian.TabIndex = 8;
-            cbLactoVegetarian.Text = "Lacto-vegetarian";
-            cbLactoVegetarian.UseVisualStyleBackColor = true;
-            // 
-            // cbOvoVegetarian
-            // 
-            cbOvoVegetarian.AutoSize = true;
-            cbOvoVegetarian.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbOvoVegetarian.Location = new Point(432, 93);
-            cbOvoVegetarian.Name = "cbOvoVegetarian";
-            cbOvoVegetarian.Size = new Size(156, 27);
-            cbOvoVegetarian.TabIndex = 9;
-            cbOvoVegetarian.Text = "Ovo-vegetarian";
-            cbOvoVegetarian.UseVisualStyleBackColor = true;
-            // 
-            // cbVegan
-            // 
-            cbVegan.AutoSize = true;
-            cbVegan.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbVegan.Location = new Point(594, 93);
-            cbVegan.Name = "cbVegan";
-            cbVegan.Size = new Size(81, 27);
-            cbVegan.TabIndex = 10;
-            cbVegan.Text = "Vegan";
-            cbVegan.UseVisualStyleBackColor = true;
-            // 
-            // cbRawVegan
-            // 
-            cbRawVegan.AutoSize = true;
-            cbRawVegan.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cbRawVegan.Location = new Point(491, 126);
-            cbRawVegan.Name = "cbRawVegan";
-            cbRawVegan.Size = new Size(122, 27);
-            cbRawVegan.TabIndex = 11;
-            cbRawVegan.Text = "Raw-Vegan";
-            cbRawVegan.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(359, 362);
-            label1.Name = "label1";
-            label1.Size = new Size(73, 35);
-            label1.TabIndex = 12;
-            label1.Text = "Next";
-            label1.Click += label1_Click_1;
             // 
             // clbVegitarian
             // 
-            clbVegitarian.BackColor = Color.Beige;
-            clbVegitarian.ColumnWidth = 300;
+            clbVegitarian.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            clbVegitarian.BackColor = Color.Black;
+            clbVegitarian.BorderStyle = BorderStyle.None;
+            clbVegitarian.CheckOnClick = true;
+            clbVegitarian.ColumnWidth = 200;
             clbVegitarian.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            clbVegitarian.ForeColor = Color.White;
             clbVegitarian.FormattingEnabled = true;
-            clbVegitarian.Items.AddRange(new object[] { "Fexitarian", "Lacto-ovo vegetarian", "Lacto-vegetarian", "Ovo-Vegetarian", "Vegan", "Raw-Vegan" });
-            clbVegitarian.Location = new Point(168, 170);
+            clbVegitarian.Items.AddRange(new object[] { "Flexitarian", "Lacto-ovo vegetarian", "Lacto-vegetarian", "Vegan" });
+            clbVegitarian.Location = new Point(299, 200);
             clbVegitarian.MultiColumn = true;
             clbVegitarian.Name = "clbVegitarian";
-            clbVegitarian.Size = new Size(465, 104);
+            clbVegitarian.Size = new Size(206, 100);
             clbVegitarian.TabIndex = 13;
+            clbVegitarian.ThreeDCheckBoxes = true;
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Felix Titling", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(217, 83);
+            label2.Name = "label2";
+            label2.Size = new Size(377, 70);
+            label2.TabIndex = 14;
+            label2.Text = "PICK YOUR PREFER \r\nVEGATARIAN LIFESTYLE";
+            label2.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button1.Font = new Font("Felix Titling", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(328, 330);
+            button1.Name = "button1";
+            button1.Size = new Size(148, 42);
+            button1.TabIndex = 15;
+            button1.Text = "NEXT";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form7
             // 
@@ -138,30 +87,20 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(label2);
             Controls.Add(clbVegitarian);
-            Controls.Add(label1);
-            Controls.Add(cbRawVegan);
-            Controls.Add(cbVegan);
-            Controls.Add(cbOvoVegetarian);
-            Controls.Add(cbLactoVegetarian);
-            Controls.Add(cbLactoOvoVegetarian);
-            Controls.Add(cbFexitarian);
             DoubleBuffered = true;
             Name = "Form7";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form7";
+            Text = "FitCheck";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private CheckBox cbFexitarian;
-        private CheckBox cbLactoOvoVegetarian;
-        private CheckBox cbLactoVegetarian;
-        private CheckBox cbOvoVegetarian;
-        private CheckBox cbVegan;
-        private CheckBox cbRawVegan;
-        private Label label1;
         private CheckedListBox clbVegitarian;
+        private Label label2;
+        private Button button1;
     }
 }
